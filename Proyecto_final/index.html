@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eBookLand</title>
+		<link href="recursos/css/principal.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#logo').hover(function() {
+        $('#textoOculto').slideDown();
+    }, function() {
+        $('#textoOculto').slideUp();
+    });
+});
+</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+
+		<link href="recursos/css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+		<script src="recursos/js/jquery-3.3.1.min.js"></script>
+		<script src="recursos/js/popper.min.js"></script>
+		<script src="recursos/js/bootstrap-4.3.1.js"></script>
+	</head>
+
+	<body background="recursos/images/fondo.jpg">
+
+			<div id="caja1">
+				<center><img src="recursos/images/logo.png" alt="Placeholder image" class="img-thumbnail img-fluid" id="logo">
+    				<h4 id="textoOculto" style="display: none;">Electronic-Book Land</h4>
+					<a id="comenzar" href="paginas/inicio.html">COMENZAR</a>
+				</center>
+			</div>
+	</body>
+</html>

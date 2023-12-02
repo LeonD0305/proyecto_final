@@ -1,0 +1,256 @@
+
+
+/* ESTO ES EL FONDO DEL LOGIN */
+.login-box {
+    font-family: sans-serif;
+    width: 80%;
+    max-width: 720px; /* Añadí un límite máximo de ancho */
+    background: #0b3954;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:  40px 20px;
+	margin: 30px 0px;
+
+}
+
+
+/* ESTE ES COLOR DE LETRA DE CONTACTANOS */
+.login-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #e5eaf5;
+    text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ESTE ES css DEL TEXTO DEBAJO DEL TITULO */
+.login-box p {
+    margin: 0 0 30px;
+    padding: 0;
+    line-height: 1.5;
+    color: #e5eaf5;
+    text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* ESTE ES COLOR DE TODOS LOS DATOS QUE PIDAMOS */
+.login-box .user-box {
+    position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.login-box .user-box input {
+    font-family: 'Montserrat', sans-serif;
+	width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #e5eaf5;
+    outline: none;
+    background: transparent;
+	
+}
+
+.login-box .user-box label {
+	font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus + label,
+.login-box .user-box input:valid + label {
+    top: -20px;
+		left: 0;
+		color: #fff;
+    font-size: 12px;
+}
+
+/* ESTE ES COLOR DE LETRAS DE ENVIAR */
+.login-box form a {
+	font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #1e1e5d;
+    font-size: 16px;
+	text-align: center;
+    text-decoration: none;
+    text-transform: translate(50%, 50%);
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 30px;
+    letter-spacing: 4px;
+    background: #ff5a5f;
+    border-radius: 10px;
+}
+
+/* ESTE ES COLOR DE EFECTO CUANDO PASAS EL MOUSE POR ENCIMA DE ENVIAR */
+.login-box a:hover {
+    background: #ff5a5f;
+    color: #e5eaf5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff5a5f, 0 0 25px #0b3954, 0 0 50px #ff5a5f, 0 0 100px #ff5a5f;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFFFeb);
+    animation: bt-anim1 1s linear infinite;
+}
+
+/* ESTE ES COLOR DE LINEAS DE ENVIAR */
+@keyframes bt-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FFFFeb);
+    animation: bt-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes bt-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #FFFFeb);
+    animation: bt-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes bt-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FFFFeb);
+    animation: bt-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes bt-anim4 {
+    0% {
+        top: 100%;
+    }
+    50%, 100% {
+        top: -100%;
+    }
+}
+
+
+
+
+
+    .whatsapp-tn {
+        position: fixed;
+        bottom: 15px;
+        right: 20px;
+    }
+
+    .whatsapp-tn a {
+        display: block;
+        background-color: #ff8692;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+    }
+
+    .whatsapp-tn img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-tn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    color: #FFFFFF;
+    border: 3px solid white;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+	align-items: center;
+}
+
+.whatsapp-tn:hover {
+	animation: bounce 1.6s infinite;    
+	display: flex;
+	background: #ff8692;
+    color: #e5eaf5;
+    box-shadow: 0 0 5px #ff8692, 0 0 25px #ff8692, 0 0 50px #ff8692, 0 0 100px #ff8692;
+    
+}
+
+
+
+@keyframes bounce {
+	0%, 20%, 50%, 12%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-5px);
+	}
+	60% {
+		transform: translateY(-5px);
+	}
+}
+
+@media (hover: hover) {
+	.whatsapp.btn:hover .joinchat__tooltip {
+		opacity: 1;
+		animation: none;
+		transition: opacity 0,2s
+	}
+}

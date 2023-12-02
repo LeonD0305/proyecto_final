@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías</title>
+		<link rel="stylesheet" href="../../../recursos/css/estilo-general.css">
+	<link href="../../../recursos/css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+	<script src="../../../recursos/js/jquery-3.3.1.min.js"></script>
+	<script src="../../../recursos/js/popper.min.js"></script>
+	<script src="../../../recursos/js/bootstrap-4.3.1.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-custom">
+		<a class="navbar-brand" href="../../../index.html">EbookLand</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">	
+				<li class="nav-item"> <a class="nav-link" href="../../inicio.html" >Inicio</a> </li>
+				<li class="nav-item"> <a class="nav-link active" href="../../categorias.html">Categorias</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Mi cuenta</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../../ayuda_soporte.html">Ayuda y soporte</a> </li>
+			</ul>
+		</div>
+	</nav>  
+	
+	<header>
+		<h2>Novelas</h2>
+	</header>
+
+	<div id="accordion1" role="tablist">
+		<div class="card">
+			<div class="card-header" role="tab" id="headingOne1">
+				<h5 class="mb-0 ">
+					<a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1"> El Principito </a>
+				</h5>
+			</div>
+			<div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
+				<div class="card-body">
+					<center>
+						<table width="90%" border="0">
+						<tbody>
+							<tr>
+								<td width="70%">
+									<p>El Principito, protagonista de la historia, es un niño muy singular que habita en un asteroide lejano, y que en su inocencia es portador de una gran sabiduría. Llega a la Tierra luego de un largo recorrido espacial, en busca de alguien que le sepa dibujar un cordero.</p>
+								</td>
+								<td align="center">
+									<img src="../../../recursos/images/libros/principito.webp" class="img-fluid" alt="portada principito" >
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</center>
+					<a class="botonlibro" href="../../libros/ficcion/nov-libro1.html">Ver Libro</a>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" role="tab" id="headingTwo1">
+				<h5 class="mb-0">
+					<a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1"> El Libro de la Selva </a>
+				</h5>
+			</div>
+			<div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
+				<div class="card-body">
+					<center>
+						<table width="080%" border="0">
+							<tbody>
+								<tr>
+									<td width="60%">
+										<p>El libro de la selva, también conocido en español como El libro de las tierras vírgenes y El libro de la jungla, publicado en 1894, es una colección de historias escritas por el inglés nacido en La India, Rudyard Kipling, el primer escritor británico en ser galardonado con el Premio Nobel de Literatura, en 1907.</p>
+									</td>
+									<td align="center">
+										<img src="../../../recursos/images/libros/librodelaselva.webp" class="img-fluid" alt="portada Libro de la selva">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<a class="botonlibro" href="../../libros/ficcion/nov-libro2.html">Ver Libro</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

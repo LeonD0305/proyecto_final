@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>inicio</title>
+		<link rel="stylesheet" href="../recursos/css/inicio.css">
+		
+		<link rel="stylesheet" href="../recursos/css/estilo-general.css">
+		<link href="../recursos/css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+		<script src="../recursos/js/jquery-3.3.1.min.js"></script>
+		<script src="../recursos/js/popper.min.js"></script>
+		<script src="../recursos/js/bootstrap-4.3.1.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-custom">
+			<a class="navbar-brand" href="../index.html">eBookLand</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">	
+					<li class="nav-item"> <a class="nav-link active" href="inicio.html" >Inicio</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="categorias.html">Categorias</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#">Mi cuenta</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="ayuda_soporte.html">Ayuda y soporte</a> </li>
+				</ul>
+			</div>
+		</nav>   
+
+		<header>
+			<img src="../recursos/images/logo.png" alt="Placeholder image" width="450"> 
+			<h4>Para viajar lejos, no hay mejor nave que un libro</h4>
+		</header>
+
+			
+		<center>
+			<div id="carouselExampleIndicators1" class="carousel slide col-xl-7" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+				</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<img src="../recursos/images/libros/principito.webp" alt="First slide" height="500" class="d-block mx-auto">
+
+						<h5 class="titulo-libro">El principito</h5>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block mx-auto" src="../recursos/images/libros/alicia.webp" alt="Second slide" height="500">
+					<h5 class="titulo-libro">Alicia en el Pais de las Maravillas</h5>
+					
+				</div>
+				<div class="carousel-item">
+					<img class="d-block mx-auto" src="../recursos/images/libros/librodelaselva.webp" alt="Third slide" height="500">
+					<h5 class="titulo-libro">El libro de la selva</h5>
+				</div>	
+			</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</center>
+		
+		
+	
+		<center>
+			<div id="buscar">
+				<h2>Buscar un libro:D</h2>
+				<form>
+					<input  type="libro" placeholder="BUSCA UN LIBRO">
+					<button type="submit">BUSCAR</button>
+				</form>
+			</div>
+		</center>
+		<div class="relleno-footer"></div>
+		<footer>
+        	<p>&copy; eBookLand Biblioteca Virtual</p>
+   		</footer>
+	
+	</body>
+</html>

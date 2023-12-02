@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background: linear-gradient(to bottom, #bfd7ea , #fff);
+	font-family: 'Josefin Sans', sans-serif;
+	height: 100vh;
+	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+}
+
+
+header {
+    background: #fff;
+    color: #1e1e5d;
+    text-align: center;
+    padding: 20px 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.bg-custom{
+	background: linear-gradient(45deg, #087e8b , #0b3954);
+
+}
+
+.nav-item:hover{
+	background-color: #087e8b;
+	border-radius: 10px;
+}
+
+.relleno-footer{
+	height: 80px;
+}
+
+footer {
+	background: linear-gradient(45deg, #087e8b , #0b3954);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
