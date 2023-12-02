@@ -36,36 +36,31 @@
 				<div class="login-box">
 					<h1>Contáctenos</h1>
 					<p>¡Estamos aquí para ayudar! Envíenos cualquier duda que tenga. Esperamos con interés escuchar de usted.</p>
-					<form>
-						<div class="user-box">
-							<input type="text" name="" required>
-							<label>Nombre y Apellidos:</label>
-						</div>
+					<form action="php/enviar.php" method="post">
+    <div class="user-box">
+        <input type="text" name="nombre" required>
+        <label for="nombre">Nombre y Apellidos:</label>
+    </div>
 
-					  <div class="user-box">
-							<input type="email" name="" required>
-							<label>Correo Electrónico:</label>
-						</div>
+    <div class="user-box">
+        <input type="email" name="correo" required>
+        <label for="correo">Correo Electrónico:</label>
+    </div>
 
-					  <div class="user-box">
-							<input type="tel" id="telf" name="telf" required>
-							<label>Número de Celular:</label>
-						</div>
+    <div class="user-box">
+        <input type="tel" id="telf" name="telf" required>
+        <label for="numero"> Número de Celular:</label>
+    </div>
 
-						<div class="user-box">
-							<input type="message" id="message" name="message" required>
-							<label>Mensaje:</label>
-						</div>
-						<center>
-						  <a href="#">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							ENVIAR
-							</a>
-						</center>
-					</form>
+    <div class="user-box">
+    <input type="text" id="message" name="message" required>
+    <label for="message">Mensaje:</label>
+</div>
+
+
+	
+    <button type="submit">ENVIAR</button>
+</form>
 			  </div>
 			</center>      	
 	
