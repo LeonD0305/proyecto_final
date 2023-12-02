@@ -14,29 +14,28 @@
 	<script src="../recursos/js/popper.min.js"></script>
 	<script src="../recursos/js/bootstrap-4.3.1.js"></script>
 </head>
-<body>
+<body class="body">
 	<nav class="navbar navbar-expand-md navbar-dark bg-custom">
-	  <a class="navbar-brand" href="../index.html">eBookLand</a>
+	  <a class="navbar-brand" href="index.html">eBookLand</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
 		<ul class="navbar-nav ml-auto">	
 			<li class="nav-item"> <a class="nav-link" href="inicio.html" >Inicio</a> </li>
-			<li class="nav-item"> <a class="nav-link" href="categorias.html">Categorias</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="Categorias.html">Categorias</a> </li>
 			<li class="nav-item"> <a class="nav-link" href="#">Mi cuenta</a> </li>
-			<li class="nav-item"> <a class="nav-link active" href="ayuda_soporte.html">Ayuda y soporte</a> </li>
+			<li class="nav-item"> <a class="nav-link active" href="AYUDA_SOPORTE.html">Ayuda y soporte</a> </li>
 		</ul>
 	  </div>
 	</nav>
-	<div class="row">
-	 	<div class="col-xl-1"></div>
-	  	<div class="col-xl-10" id="contactanos">
-			<center>
-				<div class="login-box">
-					<h1>Contáctenos</h1>
-					<p>¡Estamos aquí para ayudar! Envíenos cualquier duda que tenga. Esperamos con interés escuchar de usted.</p>
-					<form action="php/enviar.php" method="post">
+	
+	
+	<div class="container">
+<div class="login-box">
+  <h1>Contáctanos</h1>
+        <p>¡Estamos aquí para ayudar! Envíenos cualquier duda que tenga. Esperamos con interés escuchar de usted.</p>
+        <form action="php/enviar.php" method="post">
     <div class="user-box">
         <input type="text" name="nombre" required>
         <label for="nombre">Nombre y Apellidos:</label>
@@ -61,22 +60,15 @@
 	
     <button type="submit">ENVIAR</button>
 </form>
-			  </div>
-			</center>      	
-	
-		</div>
-	 	<div class="col-xl-1">
-			<div class="whatsapp-tn">
-				<a href="https://w.app/eBookLand" target="_blank" class="link">
-					<img src="../recursos/images/icon-whatsapp.png" alt="icon-wsp" width="90">
-				</a>
-			</div>
-		</div>
-	</div>
-		<div class="relleno-footer"></div>
 
-    <footer>
-        <p>&copy; eBookLand Biblioteca Virtual</p>
-    </footer>
+    </div>          
+	    </div>
+
+<div class="whatsapp-tn">
+    <a href="https://w.app/eBookLand" target="_blank" class="link">
+        <img src="images/icon-whatsapp.png" alt="icon-wsp" width="90">
+    </a>
+</div>
+
 </body>
 </html>
