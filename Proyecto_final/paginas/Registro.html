@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
 	<link rel="stylesheet" href="../recursos/css/registro.css">
 	<link rel="stylesheet" href="../recursos/css/estilo-general.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,50 +15,44 @@
 	<script src="../recursos/js/bootstrap-4.3.1.js"></script>
 </head>
 <body class="body">
-	<nav class="navbar navbar-expand-md navbar-dark bg-custom">
-	  <a class="navbar-brand" href="../index.html">eBookLand</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav ml-auto">	
-			<li class="nav-item"> <a class="nav-link" href="inicio.html" >Inicio</a> </li>
-		</ul>
-	  </div>
-	</nav>
-	
-	
-	<div class="container">
-<div class="login-box">
-  <h1>Registrate</h1>
-        <p>Rellene todos los datos, para lograr un correcto registro</p>
-        <form action="../recursos/php/enviar.php" method="post">
-    <div class="user-box">
-        <input type="text" name="nombre" required>
-        <label for="nombre">Nombre y Apellidos:</label>
+    <nav class="navbar navbar-expand-md navbar-dark bg-custom">
+        <a class="navbar-brand" href="../index.html">eBookLand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="login-box">
+            <h1>Regístrate</h1>
+            <p>Rellene todos los datos para lograr un registro correcto</p>
+            <form action="../recursos/php/registro.php" method="post" autocomplete="off">
+                <div class="user-box">
+                    <input type="text" name="nombre" required>
+                    <label for="nombre">Nombre y Apellidos:</label>
+                </div>
+
+                <div class="user-box">
+                    <input type="email" name="correo" required>
+                    <label for="correo">Correo Electrónico:</label>
+                </div>
+
+                <div class="user-box">
+                    <input type="tel" id="telf" name="telf" required>
+                    <label for="numero">Número de Celular:</label>
+                </div>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
     </div>
-
-    <div class="user-box">
-        <input type="email" name="correo" required>
-        <label for="correo">Correo Electrónico:</label>
+    
+    <div class="whatsapp-tn">
+        <a href="https://w.app/eBookLand" target="_blank" class="link">
+            <img src="../images/icon-whatsapp.png" alt="icon-wsp" width="90">
+        </a>
     </div>
-
-    <div class="user-box">
-        <input type="tel" id="telf" name="telf" required>
-        <label for="numero"> Número de Celular:</label>
-    </div>
-
-    <button type="submit">Registrarse</button>
-</form>
-
-    </div>          
-	    </div>
-	
-<div class="whatsapp-tn">
-    <a href="https://w.app/eBookLand" target="_blank" class="link">
-        <img src="../images/icon-whatsapp.png" alt="icon-wsp" width="90">
-    </a>
-</div>
-
 </body>
 </html>
