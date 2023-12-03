@@ -5,7 +5,10 @@ html, body {
 body {
     background: linear-gradient(to bottom, #587ffd, #ffffff);
     font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 
 .nav-item,
 .login-box,
@@ -106,6 +109,10 @@ body {
     transition: .5s;
 }
 
+.login-box .user-box input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+}
+
 .login-box .user-box input:focus + label,
 .login-box .user-box input:valid + label {
     top: -20px;
@@ -114,15 +121,10 @@ body {
     font-size: 12px;
 }
 
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #1e1e5d inset !important;
-    color: #e5eaf5 !important;
-	border-bottom-color: #1e1e5d;
+.login-box .user-box input:-webkit-autofill::first-line {
+    background-color: transparent !important;
 }
 
-input:-webkit-autofill::first-line {
-    color: #e5eaf5 !important;
-}
 
 /* ESTE ES BOTON REGISTRARSE */
 .login-box form button {
