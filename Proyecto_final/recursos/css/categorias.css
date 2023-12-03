@@ -1,8 +1,18 @@
+
+body {
+    background: linear-gradient(to bottom, #587ffd, #ffffff);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .panel {
   background-color: #d9ecf2; 
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+}
+
+.bg-custom{
+	background: linear-gradient(45deg, #087e8b , #0b3954);
 }
 
 .panel p {
