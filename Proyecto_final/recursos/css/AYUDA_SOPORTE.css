@@ -1,0 +1,228 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, #587ffd, #ffffff);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-item,
+.login-box,
+.login-box h1,
+.login-box p,
+.login-box .user-box input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-custom{
+    background: #1e1e5d;
+	
+}
+
+.nav-item:hover{
+	background-color: #ff8692;
+	border-radius: 10px;
+	box-shadow: 0 0 3px #ff8692, 0 0 20px #ff8692, 0 0 40px #ff8692, 0 0 80px #ff8692;
+	transition: 0.2s linear;
+}
+
+.nav-item{
+	font-family: 'Montserrat', sans-serif;
+}
+.logo {
+    float: left;
+    padding: 15px 16px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* LOGIN */
+.login-box {
+    width: 520px;
+	height: 580px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background: linear-gradient(45deg, #087e8b , #0b3954);
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    padding: 30px 25px;
+}
+
+/* ESTE ES COLOR DE LETRA DE CONTACTANOS */
+.login-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #e5eaf5;
+    text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* TEXTO DEBAJO DEL TITULO */
+.login-box p {
+    margin: 0 0 30px;
+    padding: 0;
+    line-height: 1.5;
+    color: #e5eaf5;
+    text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* ESTE ES COLOR DE TODOS LOS DATOS QUE PIDAMOS */
+.login-box .user-box {
+    position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.login-box .user-box input {
+    font-family: 'Montserrat', sans-serif;
+	width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #e5eaf5;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+	font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus + label,
+.login-box .user-box input:valid + label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #1e1e5d inset !important;
+    color: #e5eaf5 !important;
+	border-bottom-color: #1e1e5d;
+}
+
+input:-webkit-autofill::first-line {
+    color: #e5eaf5 !important;
+}
+
+/* ESTE ES BOTON ENVIAR */
+.login-box form button {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #1e1e5d;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ESTE ES COLOR DE EFECTO CUANDO PASAS EL MOUSE POR ENCIMA DE ENVIAR */
+.login-box form button:hover {
+    background: #087e8b2;
+    color: #e5eaf5;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #ff8692, 0 0 5px #ff8692, 0 0 20px #ff8692, 0 0 50px #ff8692;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.login-box form button span {
+    position: absolute;
+    display: block;
+}
+
+.login-box form button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFFFeb);
+    animation: bt-anim1 1s linear infinite;
+}
+
+/*BOTON DE WSP */
+    .whatsapp-tn {
+        position: fixed;
+        bottom: 15px;
+        right: 20px;
+    }
+
+    .whatsapp-tn a {
+        display: block;
+        background-color: #ff8692;
+        width: 54.45px;
+        height: 54px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+    }
+
+    .whatsapp-tn img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+		align-content: center;
+    }
+
+
+/* Estilos para el boton de WhatsApp */
+.whatsapp-tn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    color: #FFFFFF;
+    border: 3px solid white;
+    border-radius: 100px;
+    align-items: center;
+    animation: bounce 1.6s infinite;
+}
+
+.whatsapp-tn:hover {
+	animation: bounce 1.6s infinite;    
+	display: flex;
+	background: #ff8692;
+    color: #e5eaf5;
+    box-shadow: 0 0 5px #ff8692, 0 0 25px #ff8692, 0 0 50px #ff8692, 0 0 100px #ff8692;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 12%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(3px);
+    }
+    60% {
+        transform: translateY(3px);
+    }
+}

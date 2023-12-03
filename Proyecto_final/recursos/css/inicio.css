@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(to bottom, #587ffd, #ffffff);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#carouselExampleIndicators1{
+	background: #0b3954   ;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 40px 0;
+}
+
+.d-block{
+	border: #087e8b  5px groove;
+}
+
+.bg-custom{
+	background: linear-gradient(45deg, #087e8b , #0b3954);
+
+}
+
+.titulo-libro{	
+	color: #fff;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+#buscar form button {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #1e1e5d;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+    background: #ff8692;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#buscar form button:hover {
+    background: #087e8b2;
+    color: #e5eaf5;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #ff8692, 0 0 5px #ff8692, 0 0 20px #ff8692, 0 0 50px #ff8692;
+    transition: all 0.5s ease-in-out;
+}
